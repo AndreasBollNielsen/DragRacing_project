@@ -41,15 +41,14 @@ namespace DragRacing_project
         {
             while (!Controller.RaceFinished)
             {
+                Console.Clear();
                 for (int i = 0; i < Controller.cars.Count; i++)
                 {
-                    Console.WriteLine($"car number {Controller.cars[i].RunningNumber} distance: {Controller.cars[i].Distance}\n");
+                    Console.WriteLine($"car number {Controller.cars[i].RunningNumber} distance: {Controller.cars[i].Distance}");
                     
                 }
-                Thread.Sleep(250);
-                Console.Clear();
-
-                Console.WriteLine(Controller.RaceFinished);
+                Thread.Sleep(500);
+                
             }
         }
     }

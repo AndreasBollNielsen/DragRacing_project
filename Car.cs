@@ -19,8 +19,6 @@ namespace DragRacing_project
         private Parts.Engines engine;
         private Parts.Colors color;
         
-
-        
         public Parts.Engines Engine
         {
             get { return engine; }
