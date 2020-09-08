@@ -8,6 +8,7 @@ namespace DragRacing_project
 {
    public class Parts
     {
+        //enum types for replacement of engines and colors
         public enum Engines { Jonda, Poyota };
         public enum Colors { Red, Green, Blue };
     }

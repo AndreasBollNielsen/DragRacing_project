@@ -11,8 +11,6 @@ namespace DragRacing_project
     class Controller
     {
         public float Distance = 400;
-
-
         Car car1 = new Car(1, Parts.Colors.Blue, Parts.Engines.Poyota);
         Car car2 = new Car(2, Parts.Colors.Red, Parts.Engines.Jonda);
 
@@ -22,6 +20,7 @@ namespace DragRacing_project
         public static bool RaceFinished;
         public static List<Car> cars = new List<Car>();
 
+        //constructor of the controller
         public Controller()
         {
             cars = new List<Car>() { car1, car2 };

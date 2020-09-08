@@ -8,6 +8,7 @@ namespace DragRacing_project
 {
     public  class Car
     {
+        // private fields
         private float topspeed;
         private float speed;
         private int runningNumber;
@@ -19,6 +20,7 @@ namespace DragRacing_project
         private Parts.Engines engine;
         private Parts.Colors color;
         
+        // public properties
         public Parts.Engines Engine
         {
             get { return engine; }
@@ -77,6 +79,7 @@ namespace DragRacing_project
             set { runningNumber = value; }
         }
 
+        //constructor
         public Car(int _number,Parts.Colors _color,Parts.Engines _engine)
         {
             this.color = _color;
@@ -85,6 +88,7 @@ namespace DragRacing_project
             configure_Car();
         }
 
+        //initializing fields
         private void configure_Car()
         {
             if(engine == Parts.Engines.Jonda)
@@ -103,6 +107,7 @@ namespace DragRacing_project
             }
         }
 
+        //accelerate the car to topspeed
         public void DriveCar()
         {
             if (this.Speed < this.Topspeed)
@@ -111,7 +116,7 @@ namespace DragRacing_project
 
             }
 
-            this.Distance += this.Speed * Controller.GetDeltatime();
+           
         }
     }
 

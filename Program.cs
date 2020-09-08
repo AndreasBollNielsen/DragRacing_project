@@ -17,6 +17,7 @@ namespace DragRacing_project
 
             ctrl.RunSameEngine();
 
+            //show what car won the race
             while (checkResult)
             {
                 if (Controller.RaceFinished)
@@ -36,7 +37,7 @@ namespace DragRacing_project
         }
 
         
-
+        //show how far the cars has driven
         public static void show()
         {
             while (!Controller.RaceFinished)
@@ -47,8 +48,8 @@ namespace DragRacing_project
                     Console.WriteLine($"car number {Controller.cars[i].RunningNumber} distance: {Controller.cars[i].Distance}");
                     
                 }
-                Thread.Sleep(500);
                 
+                Thread.Sleep(150);
             }
         }
     }
